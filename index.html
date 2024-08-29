@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slider</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+    <div class="slider-container">
+        <div class="slider-title">Image Gallary</div>
+        <div class="slider-subtitle" id="current-date-time"></div>
+        
+        <div class="thumbnail-container">
+            <img src="images/OIP.jpeg" alt="1" class="thumbnail" onclick="showSlides(0)">
+            <img src="images/4k-valorant-logo-ib.jpg" alt="2" class="thumbnail" onclick="showSlides(1)">
+            <img src="images/valorant-4k-2020-dx.jpg" alt="3" class="thumbnail" onclick="showSlides(2)">
+            <img src="images/valorant-jett-4k-rz-1080x1920.jpg" alt="4" class="thumbnail" onclick="showSlides(3)">
+            <img src="images/wal.jpg" alt="5" class="thumbnail" onclick="showSlides(4)">
+        </div>
+        <div class="main-image-container">
+            <div class="slides fade">
+                <img src="images/OIP.jpeg" alt="1" class="main-image">
+            </div>
+            <div class="slides fade">
+                <img src="images/4k-valorant-logo-ib.jpg" alt="2" class="main-image">
+            </div>
+            <div class="slides fade">
+                <img src="images/valorant-4k-2020-dx.jpg" alt="3" class="main-image">
+            </div>
+            <div class="slides fade">
+                <img src="images/valorant-jett-4k-rz-1080x1920.jpg" alt="4" class="main-image">
+            </div>
+            <div class="slides fade">
+                <img src="images/wal.jpg" alt="5" class="main-image">
+            </div>
+        </div>
+        <a class="prev" onclick="prevSlide()">&#10094;</a>
+        <a class="next" onclick="nextSlide()">&#10095;</a>
+        <div class="dots-container">
+            <span class="dot" onclick="showSlides(0)"></span>
+            <span class="dot" onclick="showSlides(1)"></span>
+            <span class="dot" onclick="showSlides(2)"></span>
+            <span class="dot" onclick="showSlides(3)"></span>
+            <span class="dot" onclick="showSlides(4)"></span>
+        </div>
+    </div>
+    <script src="JS/script.js"></script>
+</body>
+
+</html>
